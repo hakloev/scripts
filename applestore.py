@@ -20,9 +20,9 @@ def getResponseAndMd5():
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        interval = int(sys.argv[1])
+        interval = float(sys.argv[1])
     else:
-        interval = int(raw_input('Hvor langt oppdateringsintervall vil du ha i hele minutter? '))
+        interval = float(raw_input('Hvor langt oppdateringsintervall vil du ha i hele minutter? '))
     
     while True:
         md5 = getResponseAndMd5()
