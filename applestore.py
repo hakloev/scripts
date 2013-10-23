@@ -24,8 +24,7 @@ if __name__ == '__main__':
     else:
         interval = int(raw_input('Hvor langt oppdateringsintervall vil du ha i hele minutter? '))
     
-    Flag = True
-    while Flag:
+    while True:
         md5 = getResponseAndMd5()
         if md5 == '43d30f94f0fcde617a4eb441b37851fe':
             print 'Ikke lansert enda!'
@@ -34,7 +33,7 @@ if __name__ == '__main__':
             os.system('open -a Safari http://store.apple.com/no/buy-iphone/iphone5s')
             print 'Lansert, eller noe er i det minste endret!'
             print 'Den nye md5-summen: ', md5
-            Flag = False
+            break
         
         if interval <= 1:
             print 'Sover i', interval, 'minutt'
