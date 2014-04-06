@@ -20,7 +20,7 @@ apikey = 'YOUR API KEY'
 # If you want to hardcode it use these fields
 recordid = 'ID' 
 recordtype = 'TYPE'
-domainid = 'ID' # loevdal.net
+domainid = 'ID' 
 
 baseurl = 'https://api.digitalocean.com/domains/%s' % (domainid)
 
