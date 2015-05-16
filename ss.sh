@@ -17,5 +17,5 @@ filename=`date '+%Y%m%d%H%M%S'`.png
 path=~/Pictures/Screenshots/
 mkdir -p $path
 screencapture -o -i $path$filename
-scp $path$filename hakloev@hakloev.no:/var/www/hakloev.no/screenshots/ > /dev/null
+scp $path$filename hakloev:/var/www/hakloev.no/screenshots/ > /dev/null
 printf $url$filename | pbcopy
